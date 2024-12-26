@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Quiz_backend": {
+      "main": "src/Quiz_backend/main.mo",
+      "type": "motoko"
+    },
+    "Quiz_frontend": {
+      "dependencies": [
+        "Quiz_backend"
+      ],
+      "source": [
+        "src/Quiz_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Quiz_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
